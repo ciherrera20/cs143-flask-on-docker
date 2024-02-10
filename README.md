@@ -46,4 +46,4 @@ Users can upload images at [http://localhost:1342/upload](http://localhost:1342/
 
 ## Example
 
-![](https://github.com/ciherrera20/cs143-flask-on-docker/webapp.gif)
+![](https://github.com/ciherrera20/cs143-flask-on-docker/blob/master/webapp.gif)
