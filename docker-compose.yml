@@ -5,6 +5,7 @@ services:
         build: ./services/web
         command: python manage.py run -h 0.0.0.0
         volumes:
+            # bind (mount) volume
             - ./services/web/:/usr/src/app/
         ports:
             - 1342:5000
@@ -15,6 +16,7 @@ services:
     db:
         image: postgres:13
         volumes:
+            # named volume => does not start with a . or /
             - postgres_data:/var/lib/postgresql/data/
         environment:
             - POSTGRES_USER=hello_flask
